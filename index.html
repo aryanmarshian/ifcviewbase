@@ -13,10 +13,18 @@
 </head>
 
 <body>
-    <input type="file" id="file-input">
-    <br />
-    <p id="notification">Check out the <a href="https://github.com/AnweshGangula/ifcjs-viewer">following repository</a> for additional features</p>
-    <div id="viewer-container"></div>
+    <header>
+        <h1>IFC.js Model Viewer</h1>
+    </header>
+    <main>
+        <aside id="sidebar">
+            <label for="file-input" class="custom-file-label">Upload IFC File</label>
+            <input type="file" id="file-input" class="custom-file-input">
+        </aside>
+        <section id="viewer-section">
+            <div id="viewer-container"></div>
+        </section>
+    </main>
     <script src="./bundle.js"></script>
 </body>
 
